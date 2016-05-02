@@ -94,7 +94,7 @@ body {
 
 .badge {
 	background-color: rgb(255, 0, 0);
-	padding: 3px 3px;
+	padding: 2px;
 	line-height: 0.7;
 	vertical-align: top;
 }
