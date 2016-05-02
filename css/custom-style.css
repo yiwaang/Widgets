@@ -1,0 +1,233 @@
+/*
+	custom icon CSS
+*/
+
+.icon-menu {
+	background:transparent url(menu-ico.png) no-repeat 0 0;
+	width:25px;
+	height:25px;
+	vertical-align: middle;}
+
+.icon-menu1 {
+	background-position:-2px -2px;
+	top:-1px;
+	margin-right: 9px}
+
+.icon-menu2 {
+	background-position: -2px -33px;
+	margin-right:9px;}
+
+.icon-menu3 {
+	background-position: -2px -63px;
+	width:32px;
+	margin-right:10px;}
+
+.icon-menu4 {
+	background-position: -2px -93px;
+	height:27px;
+	margin-right:4px;}
+
+i {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	overflow: hidden;
+	text-decoration: none;
+	font-style: normal;
+	background-repeat: no-repeat;
+	margin-right:12px;
+	vertical-align: middle;
+}
+
+/*
+	center the navigation bar
+*/
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+        
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+}
+
+/*
+	navbar color setting
+*/
+
+.navbar-default {
+	background-color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .dropdown-menu > li > a, .dropdown-menu > li > a:hover {
+	color: #8e8071;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #8e8071;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+	color:#8e8071;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color:#8e8071;
+}
+
+/*
+	badge css rewrite
+*/
+
+.badge {
+	background-color: rgb(255, 0, 0);
+	padding: 3px 3px;
+	line-height: 0.7;
+	vertical-align: top;
+}
+/*
+	li hover setting
+*/
+
+.navbar-default .navbar-nav > li > a:hover {
+    background-color: #f8f3f0;
+    border-bottom: 3px solid #4daf7b;
+        height: 55px;
+}
+
+.dropdown-menu > li > a:hover {
+	border-left: 3px solid #4daf7b;
+	border-bottom: 0px solid #4daf7b;
+    background-color: #f8f3f0;
+    height: 30px;
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+/*
+	custom css for profile widget
+*/
+
+.profile-title, .profile-sidebar {
+	background: #b1a599;
+}
+
+.profile-userpic {
+	position: absolute;
+	left: 28px;
+	margin-top: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 89px;
+    height: 89px;
+    overflow: hidden;
+    border: 1px solid #8b7f73;
+    padding: 7px;
+}
+
+.profile-userpic img {
+    float: none;
+  	margin: 0 auto;
+	display: block;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    width: 73px;
+    height: 73px;
+}
+
+.profile-usertitle {
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	line-height: 16px;
+	letter-spacing: 1px;
+	padding: 33px 20px 0px 122px;
+}
+
+.profile-usertitle-name {
+  	text-transform: uppercase;
+  	color: #fff;
+  	font-size: 16px;
+  	font-weight: 600;
+  	margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  	color: #7b6d5e;
+  	font-size: 12px;
+  	font-weight: 600;
+  	margin-bottom: 15px;
+}
+    
+.profile-usermenu {
+  	margin-top: 30px;
+  	padding: 12px 0;
+  	background: #fff;
+}
+
+.profile-usermenu ul li {
+  	border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  	border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  	color: #7b6d5e;
+  	font-size: 14px;
+  	font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  	margin-right: 8px;
+  	font-size: 14px;
+  	float: right;
+  	margin: 0;
+  	width: 20px;
+  	height: 20px;
+}
+
+.profile-usermenu ul li a:hover {
+  	background: #f6f0ec;
+  	border-left: 3px solid #40a268;
+  	margin-left: -2px;
+  	color: #7b6d5e;
+}
+
+.profile-usermenu ul li a:hover  i {
+	color: red;
+}
+
+.profile-usermenu ul li.active {
+  	border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  	color: #7b6d5e;
+  	background: #f6f0ec;
+  	border-left: 3px solid #40a268;
+  	margin-left: -2px;
+}
+
+.profile-usermenu ul li.active a i {
+	color: red;
+}
