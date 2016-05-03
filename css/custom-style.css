@@ -46,6 +46,7 @@ i {
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #8e8071;
 }
 
 .navbar {
@@ -93,10 +94,10 @@ body {
 */
 
 .badge {
-	background-color: rgb(255, 0, 0);
-	padding: 2px;
-	line-height: 0.7;
-	vertical-align: top;
+  	background-color: rgb(255, 0, 0);
+  	padding: 3px 3px;
+  	line-height: 0.7;
+  	vertical-align: top;
 }
 /*
 	li hover setting
@@ -105,12 +106,12 @@ body {
 .navbar-default .navbar-nav > li > a:hover {
     background-color: #f8f3f0;
     border-bottom: 3px solid #4daf7b;
-        height: 55px;
+    height: 55px;
 }
 
 .dropdown-menu > li > a:hover {
-	border-left: 3px solid #4daf7b;
-	border-bottom: 0px solid #4daf7b;
+  	border-left: 3px solid #4daf7b;
+  	border-bottom: 0px solid #4daf7b;
     background-color: #f8f3f0;
     height: 30px;
 }
@@ -120,17 +121,44 @@ body {
 }
 
 /*
+  rewrite column css
+*/
+
+.col-md-4 {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/*
 	custom css for profile widget
 */
 
+.profile-title {
+    padding-top: 1px;
+}
+
 .profile-title, .profile-sidebar {
-	background: #b1a599;
+	  background: #b1a599;
+}
+
+.profile-sidebar {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 12px rgba(58, 51, 46, 0.26);
+    -moz-box-shadow: 0 0 12px rgba(58, 51, 46, 0.26);
+    box-shadow: 0 0 12px rgba(58, 51, 46, 0.26);
 }
 
 .profile-userpic {
-	position: absolute;
-	left: 28px;
-	margin-top: 15px;
+  	position: absolute;
+  	left: 28px;
+  	margin-top: 15px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -144,7 +172,7 @@ body {
 .profile-userpic img {
     float: none;
   	margin: 0 auto;
-	display: block;
+	  display: block;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -153,13 +181,12 @@ body {
 }
 
 .profile-usertitle {
-	margin-top: 20px;
-	font-size: 16px;
-	font-weight: 700;
-	color: #fff;
-	line-height: 16px;
-	letter-spacing: 1px;
-	padding: 33px 20px 0px 122px;
+  	font-size: 16px;
+  	font-weight: 700;
+  	color: #fff;
+  	line-height: 16px;
+  	letter-spacing: 1px;
+  	padding: 33px 20px 0px 122px;
 }
 
 .profile-usertitle-name {
@@ -214,7 +241,7 @@ body {
 }
 
 .profile-usermenu ul li a:hover  i {
-	color: red;
+	  color: red;
 }
 
 .profile-usermenu ul li.active {
@@ -229,5 +256,91 @@ body {
 }
 
 .profile-usermenu ul li.active a i {
-	color: red;
+	  color: red;
+}
+
+/*
+  custom css for profile widget 2
+*/
+
+.profile-image img {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: 25%;
+}
+
+.profile-userdescription {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 16px;
+    letter-spacing: 1px;
+    padding: 33px 20px 0px 122px;
+    height: 125px;
+}
+
+.profile-userdescription .profile-user-name {
+    color: #5c5146;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.profile-userdescription .profile-user-self-description {
+    color: #7b6d5e;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.profile-meta-links ul {
+    overflow: hidden;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+     margin-bottom: 0;
+}
+
+.profile-meta-links li {
+    width: 33.33333333333333%;
+    float: left;
+    background: #f5ede8;
+    border-left: 1px solid #fff;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #7b6d5e;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 200px;
+    margin-bottom: -200px;
+}
+
+.profile-meta-links li a {
+    padding: 10px 5px;
+    display: block;
+    color: #7b6d5e;
+    text-decoration: none;
+}
+
+.profile-meta-links li.first {
+    border-left: 0 none;
+    -webkit-border-radius: 0 0 0 5px;
+    -moz-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px;
+}
+
+.profile-meta-links li.last {
+    -webkit-border-radius: 0 0 5px 0;
+    -moz-border-radius: 0 0 5px 0;
+    border-radius: 0 0 5px 0;
+}
+
+.profile-meta-links ul li a:hover, .profile-meta-links ul li a:hover  i {
+    color: red;
 }
