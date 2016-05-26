@@ -1,2 +1,2 @@
 # Widgets
-This is the widgets for Razorfish.
+This is the widgets test.
